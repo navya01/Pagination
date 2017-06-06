@@ -23,7 +23,7 @@ var Pagination = {
         Pagination.page= +this.innerHTML;
         Pagination.Start();
     },
-    Prev: function(){
+    Previous: function(){
         Pagination.page--;
         if(Pagination.page < 1)
         {
@@ -74,7 +74,7 @@ var Pagination = {
     Buttons: function(e){
         var nav = e.getElementsByTagName('a');
        
-                 nav[0].addEventListener('click',Pagination.Prev,false);
+                 nav[0].addEventListener('click',Pagination.Previous,false);
 nav[1].addEventListener('click',Pagination.Next,false);
         
     },
